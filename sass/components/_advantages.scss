@@ -1,0 +1,168 @@
+.advantages {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include for-size(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.advantages-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.list {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.list-advantages {
+  margin: -10px;
+}
+
+.detail {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin: 15px;
+  }
+
+  .title {
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @include for-size(mobile) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 1199px) {
+      text-align: left;
+    }
+
+    @include for-size(desktop) {
+      text-align: left;
+    }
+  }
+  .text {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+// Иконки
+.astronaut,
+.diagram,
+.clock,
+.antenna {
+  border: none;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $bg-color;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @include for-size(tablet) {
+    width: 354px;
+  }
+  @include for-size(desktop) {
+    width: 270px;
+  }
+}
+
+.antenna {
+  @include for-size(mobile) {
+    margin-top: 0px;
+  }
+  @include for-size(tablet) {
+    margin-top: 0px;
+  }
+  @include for-size(desktop) {
+    margin-top: 0px;
+  }
+}
+
+.clock {
+  @include for-size(mobile) {
+    margin-top: 30px;
+  }
+  @include for-size(tablet) {
+    margin-top: 0px;
+  }
+  @include for-size(desktop) {
+    margin-top: 0px;
+  }
+}
+
+.diagram {
+  @include for-size(mobile) {
+    margin-top: 30px;
+  }
+  @include for-size(tablet) {
+    margin-top: 0px;
+  }
+  @include for-size(desktop) {
+    margin-top: 0px;
+  }
+}
+
+.astronaut {
+  @include for-size(mobile) {
+    margin-top: 30px;
+  }
+  @include for-size(tablet) {
+    margin-top: 0px;
+  }
+  @include for-size(desktop) {
+    margin-top: 0px;
+  }
+}
+
+.icon-astronaut,
+.icon-diagram,
+.icon-clock,
+.icon-antenna {
+  margin: auto;
+}

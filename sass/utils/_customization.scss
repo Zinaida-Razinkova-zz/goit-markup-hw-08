@@ -1,0 +1,51 @@
+/*основной цвет текста #757575*/
+/*вспомогательный цвет текста #212121*/
+/*акцент цвет текста #2196F3*/
+/*цвет текста белый #FFFFFF*/
+/*цвет фона основной #FFFFFF*/
+/*цвет фона вспомагательный #F5F4FA*/
+/* цвет фона в портфолио #E5E5E5 */
+
+// :root {
+//   --primary-text-color: #757575;
+//   --title-text-color: #212121;
+//   --accent-color: #2196f3;
+//   --color-text-white: #ffffff;
+//   --primary-bg-color: #ffffff;
+//   --bg-color: #f5f4fa;
+//   --bg-color-footer: #2f303a;
+//   --bg-color-portfolio: #e5e5e5;
+//   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* скрыть заголовок из потока документа */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

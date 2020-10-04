@@ -1,0 +1,11 @@
+/* Убрать точки списка портфолио */
+.list-portfolio {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Линия в хеддере на всю ширину экрана */
+.line {
+  border-bottom: 1px solid #ececec;
+}

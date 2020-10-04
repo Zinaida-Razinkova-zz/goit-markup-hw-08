@@ -1,0 +1,141 @@
+.section {
+  background-color: #f5f4fa;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  font-weight: 700;
+}
+.person {
+  background-color: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+  }
+}
+
+.features {
+  @media screen and (max-width: 767px) {
+    // display: flex;
+    // justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.img-name {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.link {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.name {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 9px;
+}
+.text {
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  margin: 0px;
+}
+
+/* Социальные сети */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.link-instagram,
+.link-twitter,
+.link-facebook,
+.link-linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: $primary-bg-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-linkedin,
+.link-facebook,
+.link-twitter,
+.link-instagram {
+  &:hover,
+  &:focus {
+    .icon-linkedin,
+    .icon-facebook,
+    .icon-twitter,
+    .icon-instagram {
+      fill: $primary-bg-color;
+      outline: none;
+    }
+  }
+}
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+  fill: #afb1b8;
+}
