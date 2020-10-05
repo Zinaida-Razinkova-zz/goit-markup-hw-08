@@ -1,5 +1,5 @@
 .header {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: none;
   }
 
@@ -13,18 +13,18 @@
 }
 
 .conteiner-header {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-between;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
   }
 }
 
 .site-nav {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     .item {
       margin-right: 50px;
@@ -33,8 +33,7 @@
       }
     }
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     .item {
       margin-right: 50px;
@@ -64,13 +63,14 @@
 }
 .auth-nav {
   display: flex;
-  @media screen and (min-width: 1200px) {
-    align-items: center;
-    margin-left: auto;
-  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     justify-content: center;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    margin-left: auto;
   }
 
   .item {
@@ -78,15 +78,7 @@
       fill: $accent-color;
     }
   }
-}
 
-.icon-smartphone {
-  @media screen and (min-width: 1200px) {
-    margin-left: 50px;
-  }
-}
-
-.auth-nav {
   .link {
     color: $primary-text-color;
     font-weight: 500;
@@ -100,6 +92,13 @@
     }
   }
 }
+
+.icon-smartphone {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+}
+
 /* Иконки конверт и телефон */
 .envelope {
   border: none;

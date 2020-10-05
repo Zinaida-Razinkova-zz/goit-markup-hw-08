@@ -43,7 +43,7 @@
 .contacts {
   font-style: normal;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@
 /* Общий ul футтера*/
 
 .list-footer {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -121,7 +121,7 @@
 /* общий */
 .social-networks {
   padding: 0px;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +155,7 @@
   display: block;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,7 +238,7 @@
   justify-content: flex-star;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -259,7 +259,7 @@
 }
 
 .subscribe {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,7 +277,10 @@
 }
 
 .subscribe-email {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -300,7 +303,7 @@
 }
 
 .subscribe-section {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -329,7 +332,7 @@
 }
 
 .footer-block {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
