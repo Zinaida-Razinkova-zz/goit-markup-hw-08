@@ -875,7 +875,19 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 310px;
+    min-height: 390px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
     z-index: 3;
     position: absolute;
@@ -931,7 +943,14 @@ body.modal-open {
   margin-left: 490px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .button-close {
+    margin-top: 30px;
+    margin-left: 270px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .button-close {
     margin-left: 422px;
   }
@@ -978,7 +997,13 @@ body.modal-open {
           align-items: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .terms {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .terms {
     font-size: 12px;
   }
@@ -1802,7 +1827,7 @@ body.modal-open {
   padding-left: 0px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .list-clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2308,7 +2333,7 @@ body.modal-open {
   color: #ffffff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .subscribe-email {
     width: 300px;
   }
