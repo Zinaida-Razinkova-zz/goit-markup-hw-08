@@ -213,6 +213,15 @@ body.modal-open {
   }
 }
 
+.auth-nav .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .auth-nav .item:hover {
   fill: #2196f3;
 }
@@ -229,6 +238,11 @@ body.modal-open {
 
 .auth-nav .link:hover, .auth-nav .link:focus {
   color: #2196f3;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 15;
 }
 
 @media screen and (min-width: 1200px) {
@@ -404,6 +418,15 @@ body.modal-open {
   }
 }
 
+.auth-nav .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .auth-nav .item:hover {
   fill: #2196f3;
 }
@@ -420,6 +443,11 @@ body.modal-open {
 
 .auth-nav .link:hover, .auth-nav .link:focus {
   color: #2196f3;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 15;
 }
 
 @media screen and (min-width: 1200px) {

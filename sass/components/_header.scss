@@ -74,6 +74,8 @@
   }
 
   .item {
+    display: flex;
+    justify-content: center;
     &:hover {
       fill: $accent-color;
     }
@@ -91,6 +93,11 @@
       color: $accent-color;
     }
   }
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 15;
 }
 
 .icon-smartphone {
