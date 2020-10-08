@@ -74,8 +74,11 @@
   }
 
   .item {
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
+
     &:hover {
       fill: $accent-color;
     }
